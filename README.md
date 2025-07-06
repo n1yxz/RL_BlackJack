@@ -1,19 +1,37 @@
-# RL_BlackJack
-Reinforcement Learning Assignment 2
 
-# RL_BlackJack – Reinforcement-Learning Assignment 2 (Georgian A-RL 2025)
+# RL_BlackJack – Reinforcement‑Learning Assignment 2
 
-A self-contained repo to reproduce **Monte-Carlo Control** and **Sarsa(λ)**
-experiments on the “Modified Black Jack” game described in the assignment
-hand-out.
-
----
+This repo contains everything you need to reproduce the Monte‑Carlo Control and Sarsa(λ)
+experiments for the **Modified Black Jack** game.
 
 ## Quick start
 
 ```bash
-git clone https://github.com/n1yxz/RL_BlackJack.git
+git clone <your‑fork‑url>
 cd RL_BlackJack
-python -m venv .venv && source .venv/bin/activate   # optional but recommended
+python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 jupyter notebook
+```
+
+Open **`mc_control.ipynb`** first to create `mc_Q_star.npy`, then run **`sarsa_lambda.ipynb`**.
+
+## Directory structure
+
+```
+RL_BlackJack/
+├─ env.py               # the game environment
+├─ mc_control.ipynb     # Monte‑Carlo Control notebook
+├─ sarsa_lambda.ipynb   # Sarsa(λ) notebook (forward view)
+├─ plots/               # figures auto‑saved here
+├─ requirements.txt
+└─ README.md
+```
+
+## Submission checklist ✔️
+
+* Export a single PDF that includes **all plots**.
+* Zip the repo (without the virtual‑env) as `source.zip`.
+* No Colab notebooks. 100 % forward view (no eligibility traces).
+
+Happy learning!
